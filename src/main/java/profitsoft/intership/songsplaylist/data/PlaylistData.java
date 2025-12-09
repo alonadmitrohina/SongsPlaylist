@@ -1,4 +1,4 @@
-package profitsoft.intership.songlists.data;
+package profitsoft.intership.songsplaylist.data;
 
 import jakarta.persistence.*;
 import lombok.*;

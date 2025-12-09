@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+          http://www.liquibase.org/xml/ns/dbchangelog
+          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="create-schema" author="Alona Dmytrokhina">
+
+        <createTable tableName="playlists">
+            <column name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="description" type="TEXT"/>
+        </createTable>
+
+        <createTable tableName="songs">
+            <column name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="artist" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="year" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="genres" type="JSONB"/>
+            <column name="playlist_id" type="BIGINT">
+                <constraints nullable="false"
+                             foreignKeyName="fk_song_playlist"
+                             references="playlists(id)"/>
+            </column>
+        </createTable>
+
+
+        <createIndex indexName="idx_songs_playlist_id"
+                     tableName="songs">
+            <column name="playlist_id"/>
+        </createIndex>
+
+        <createIndex indexName="idx_songs_name"
+                     tableName="songs">
+            <column name="name"/>
+        </createIndex>
+
+        <createIndex indexName="idx_songs_artist"
+                     tableName="songs">
+            <column name="artist"/>
+        </createIndex>
+
+        <createIndex indexName="idx_songs_year"
+                     tableName="songs">
+            <column name="year"/>
+        </createIndex>
+
+    </changeSet>
+
+    <changeSet id="initial-playlists" author="Alona Dmytrokhina">
+        <loadData
+                file="data/playlists.csv"
+                tableName="playlists"
+                separator=","
+                encoding="UTF-8"/>
+    </changeSet>
+
+
+</databaseChangeLog>
