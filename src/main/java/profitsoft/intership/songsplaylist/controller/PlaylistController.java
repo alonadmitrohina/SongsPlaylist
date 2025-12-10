@@ -26,11 +26,12 @@ public class PlaylistController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public RestResponse createPlaylist(@Valid @RequestBody PlaylistSaveDto playlistSaveDto){
-        playlistService.createPlaylist(playlistSaveDto);
-        return new RestResponse("OK");
+        Long id = playlistService.createPlaylist(playlistSaveDto);
+        return new RestResponse(String.valueOf(id));
     }
 
     @PutMapping("/{id}")
+    @ResponseStatus(HttpStatus.CREATED)
     public RestResponse updatePlaylist(@PathVariable Long id, @Valid @RequestBody PlaylistSaveDto playlistSaveDto){
         playlistService.updatePlaylist(id, playlistSaveDto);
         return new RestResponse("OK");

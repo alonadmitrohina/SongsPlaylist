@@ -1,5 +1,6 @@
 package profitsoft.intership.songsplaylist.service.song;
 
+import lombok.AllArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.multipart.MultipartFile;
 import jakarta.servlet.http.HttpServletResponse;
@@ -112,19 +113,25 @@ public class SongServiceImpl implements SongService {
         }
     }
 
+    @AllArgsConstructor
+    class Counter{
+        int successCount = 0;
+        int failedCount = 0;
+
+        int getTotal(){return successCount + failedCount;}
+    }
+
     @Override
     @Transactional
     public JSONResponse uploadSongs(List<MultipartFile> files) {
-        int success = 0;
-        int failed = 0;
+        Counter counter = new Counter(0, 0);
         List<String> failedMessages = new ArrayList<>();
-        int recordNumber = 0;
 
         for(MultipartFile file : files){
-            parseFile(file, recordNumber, success, failed, failedMessages);
+            parseFile(file, counter, failedMessages);
         }
 
-        return new JSONResponse(success, failed, failedMessages);
+        return new JSONResponse(counter.successCount, counter.failedCount, failedMessages);
     }
 
 
@@ -217,13 +224,10 @@ public class SongServiceImpl implements SongService {
     /**
      * Парсинг одного JSON файлу
      * @param file
-     * @param recordNumber
-     * @param success
-     * @param failed
+     * @param counter
      * @param failedMessages
      */
-    private void parseFile(MultipartFile file, int recordNumber, int success,
-                           int failed, List<String> failedMessages) {
+    private void parseFile(MultipartFile file, Counter counter, List<String> failedMessages) {
 
         checkJSON(file);
 
@@ -236,13 +240,12 @@ public class SongServiceImpl implements SongService {
 
         List<SongSaveDto> list = jsonParser.getSongs();
         for (SongSaveDto songSaveDto : list) {
-            recordNumber++;
             try {
                 processSong(songSaveDto);
-                success++;
+                counter.successCount++;
             } catch (Exception e) {
-                failed++;
-                failedMessages.add("Record " + recordNumber + " (" + songSaveDto.getName() + "): " + e.getMessage());
+                counter.failedCount++;
+                failedMessages.add("Record " + counter.getTotal() + " (" + songSaveDto.getName() + "): " + e.getMessage());
             }
         }
     }

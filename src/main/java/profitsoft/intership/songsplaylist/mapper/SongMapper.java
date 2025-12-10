@@ -58,6 +58,7 @@ public class SongMapper {
                 .name(songData.getName())
                 .artist(songData.getArtist())
                 .year(songData.getYear())
+                .playlist(PlaylistMapper.toDto(songData.getPlaylist()))
                 .build();
     }
 

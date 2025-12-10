@@ -53,7 +53,7 @@ public class PlaylistServiceImpl implements PlaylistService {
      */
     private void validatePlaylist(PlaylistSaveDto playlistSaveDto){
         nameExists(playlistSaveDto);
-        if(playlistRepository.findByName(playlistSaveDto.getName()) != null){
+        if(playlistRepository.findExactByName(playlistSaveDto.getName()).isPresent()){
             throw new IllegalArgumentException("Playlist already exists");
         }
     }

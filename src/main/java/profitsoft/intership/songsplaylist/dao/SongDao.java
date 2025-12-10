@@ -29,7 +29,7 @@ public class SongDao {
      * @return
      */
     public List<SongInfoDto> getSongList(SongQueryDto songQueryDto) {
-        return getSongList(songQueryDto, 0, 0);
+        return getSongList(songQueryDto, -1, -1);
     }
 
     /**
@@ -85,7 +85,7 @@ public class SongDao {
      * @return
      */
     private boolean isForPagination(int page, int size) {
-        return page != 0 && size != 0;
+        return page >= 0 && size > 0;
     }
 
     /**

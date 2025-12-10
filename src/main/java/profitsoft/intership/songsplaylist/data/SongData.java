@@ -12,6 +12,7 @@ import java.util.List;
 @Table(name = "songs")
 @Getter @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @ToString
 public class SongData {
 
