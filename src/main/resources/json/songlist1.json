@@ -1,0 +1,142 @@
+[
+  {
+    "name": "The Last Train (3)",
+    "artist": "Zenith Core",
+    "year": 2020,
+    "genres": "indie rock, jangle pop",
+    "playlistId": 5
+  },
+  {
+    "name": "Shadow Dance (13)",
+    "artist": "Rouge Tide",
+    "year": 2024,
+    "genres": "afrobeats, pop",
+    "playlistId": 1
+  },
+  {
+    "name": "Stardust Serenade (195)",
+    "artist": "Terra Nova",
+    "year": 2024,
+    "genres": "trip hop, downtempo",
+    "playlistId": 5
+  },
+  {
+    "name": "River Flow (124)",
+    "artist": "Zenith Core",
+    "year": 2020,
+    "genres": "chillwave, synth-pop",
+    "playlistId": 1
+  },
+  {
+    "name": "Cosmic Compass (129)",
+    "artist": "Velvet Arcana",
+    "year": 2025,
+    "genres": "pop, dancehall",
+    "playlistId": 2
+  },
+  {
+    "name": "Solar Whisper (18)",
+    "artist": "Phantom Drive",
+    "year": 2025,
+    "genres": "disco revival, funk",
+    "playlistId": 4
+  },
+  {
+    "name": "Analog Echo (117)",
+    "artist": "The Quantum Leap",
+    "year": 2020,
+    "genres": "grunge revival, alt-rock",
+    "playlistId": 4
+  },
+  {
+    "name": "Neon City Lights (73)",
+    "artist": "The Glitch",
+    "year": 2025,
+    "genres": "folk-tronica, acoustic",
+    "playlistId": 5
+  },
+  {
+    "name": "Deep Dive (88)",
+    "artist": "Lunar Dial",
+    "year": 2025,
+    "genres": "bedroom punk, lofi",
+    "playlistId": 4
+  },
+  {
+    "name": "Moonlit Bloom (164)",
+    "artist": "The Glitch",
+    "year": 2024,
+    "genres": "trap, lo-fi",
+    "playlistId": 3
+  },
+  {
+    "name": "Zero Hour (17)",
+    "artist": "Lunar Dial",
+    "year": 2024,
+    "genres": "folk-tronica, acoustic",
+    "playlistId": 5
+  },
+  {
+    "name": "Electric Bloom (136)",
+    "artist": "Midnight Pilot",
+    "year": 2020,
+    "genres": "trap, lo-fi",
+    "playlistId": 1
+  },
+  {
+    "name": "Digital Soul (49)",
+    "artist": "Aura X",
+    "year": 2025,
+    "genres": "neo-soul, r&b",
+    "playlistId": 2
+  },
+  {
+    "name": "Stardust Serenade (149)",
+    "artist": "Rouge Tide",
+    "year": 2024,
+    "genres": "synthwave, electro-pop",
+    "playlistId": 3
+  },
+  {
+    "name": "Crystal Maze (168)",
+    "artist": "Driftwood Collective",
+    "year": 2020,
+    "genres": "indie rock, jangle pop",
+    "playlistId": 5
+  },
+  {
+    "name": "Deep Dive (68)",
+    "artist": "Zenith Core",
+    "year": 2024,
+    "genres": "grunge revival, alt-rock",
+    "playlistId": 2
+  },
+  {
+    "name": "Midnight Call (181)",
+    "artist": "The Glitch",
+    "year": 2020,
+    "genres": "industrial, darkwave",
+    "playlistId": 2
+  },
+  {
+    "name": "Midnight Call (156)",
+    "artist": "Midnight Pilot",
+    "year": 2024,
+    "genres": "synthwave, electro-pop",
+    "playlistId": 2
+  },
+  {
+    "name": "Desert Bloom (106)",
+    "artist": "The Silent Theory",
+    "year": 2025,
+    "genres": "trip hop, downtempo",
+    "playlistId": 2
+  },
+  {
+    "name": "River Flow (104)",
+    "artist": "The Vinyl Vault",
+    "year": 2020,
+    "genres": "folk-tronica, acoustic",
+    "playlistId": 1
+  }
+]

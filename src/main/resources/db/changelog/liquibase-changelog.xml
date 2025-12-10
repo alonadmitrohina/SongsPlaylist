@@ -35,7 +35,8 @@
             <column name="playlist_id" type="BIGINT">
                 <constraints nullable="false"
                              foreignKeyName="fk_song_playlist"
-                             references="playlists(id)"/>
+                             references="playlists(id)"
+                             deleteCascade="true"/>
             </column>
         </createTable>
 

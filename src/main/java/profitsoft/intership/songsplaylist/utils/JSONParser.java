@@ -3,9 +3,9 @@ package profitsoft.intership.songsplaylist.utils;
 import lombok.Getter;
 import lombok.Setter;
 import profitsoft.intership.songsplaylist.dto.song.SongSaveDto;
-import tools.jackson.core.JsonParser;
-import tools.jackson.core.JsonToken;
-import tools.jackson.core.json.JsonFactory;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonToken;
+import com.fasterxml.jackson.core.JsonFactory;
 
 
 import java.io.IOException;

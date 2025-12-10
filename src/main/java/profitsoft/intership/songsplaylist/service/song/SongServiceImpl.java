@@ -122,7 +122,6 @@ public class SongServiceImpl implements SongService {
     }
 
     @Override
-    @Transactional
     public JSONResponse uploadSongs(List<MultipartFile> files) {
         Counter counter = new Counter(0, 0);
         List<String> failedMessages = new ArrayList<>();
@@ -254,7 +253,8 @@ public class SongServiceImpl implements SongService {
      * Перевірка та збереження пісні з файлу
      * @param songSaveDto
      */
-    private void processSong(SongSaveDto songSaveDto) {
+    @Transactional
+    protected void processSong(SongSaveDto songSaveDto) {
         PlaylistData playlist = playlistRepository.findById(songSaveDto.getPlaylistId())
                 .orElseThrow(() -> new IllegalArgumentException(
                         "Playlist with id " + songSaveDto.getPlaylistId() + " not found"

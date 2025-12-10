@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Analog Echo (151)",
+    "artist": "The Glitch",
+    "year": 2025,
+    "genres": "chillwave, synth-pop",
+    "playlistId": 1
+  },
+  {
+    "name": "Neon Dreams (111)",
+    "artist": "Zenith Core",
+    "year": 2024,
+    "genres": "indie rock, jangle pop",
+    "playlistId": 3
+  },
+  {
+    "name": "Crimson Haze (171)",
+    "artist": "Lunar Dial",
+    "year": 2020,
+    "genres": "folk-tronica, acoustic",
+    "playlistId": 5
+  },
+  {
+    "name": "Electric Bloom (94)",
+    "artist": "Midnight Pilot",
+    "year": 2025,
+    "genres": "indie rock, jangle pop",
+    "playlistId": 1
+  },
+  {
+    "name": "Solar Whisper (188)",
+    "artist": "Phantom Drive",
+    "year": 2020,
+    "genres": "dreampop, ambient",
+    "playlistId": 4
+  },
+  {
+    "name": "Desert Drive (86)",
+    "artist": "The Glitch",
+    "year": 2024,
+    "genres": "neo-soul, r&b",
+    "playlistId": 1
+  },
+  {
+    "name": "Moon Tattoo (61)",
+    "artist": "Velvet Arcana",
+    "year": 2025,
+    "genres": "disco revival, funk",
+    "playlistId": 3
+  },
+  {
+    "name": "Nova Rains (75)",
+    "artist": "Indigo Bloom",
+    "year": 2020,
+    "genres": "indie rock, jangle pop",
+    "playlistId": 2
+  },
+  {
+    "name": "Moonlit Bloom (161)",
+    "artist": "Midnight Pilot",
+    "year": 2024,
+    "genres": "pop, dancehall",
+    "playlistId": 5
+  },
+  {
+    "name": "Deep Dive (86)",
+    "artist": "The Vinyl Vault",
+    "year": 2025,
+    "genres": "hyperpop, future bass",
+    "playlistId": 4
+  },
+  {
+    "name": "Desert Drive (85)",
+    "artist": "Aura X",
+    "year": 2020,
+    "genres": "garage rock, punk",
+    "playlistId": 2
+  },
+  {
+    "name": "The Great Escape (54)",
+    "artist": "The Quantum Leap",
+    "year": 2024,
+    "genres": "neo-soul, r&b",
+    "playlistId": 3
+  },
+  {
+    "name": "Analog Sunset (77)",
+    "artist": "Midnight Pilot",
+    "year": 2025,
+    "genres": "synthwave, electro-pop",
+    "playlistId": 1
+  },
+  {
+    "name": "Crimson Haze (169)",
+    "artist": "Juno 5",
+    "year": 2024,
+    "genres": "dreampop, ambient",
+    "playlistId": 3
+  },
+  {
+    "name": "Shadow Dance (108)",
+    "artist": "The Glitch",
+    "year": 2020,
+    "genres": "trip hop, downtempo",
+    "playlistId": 5
+  },
+  {
+    "name": "Neon Dreams (92)",
+    "artist": "Phantom Drive",
+    "year": 2025,
+    "genres": "glitch hop, electronic",
+    "playlistId": 4
+  },
+  {
+    "name": "Stardust Serenade (196)",
+    "artist": "Midnight Pilot",
+    "year": 2024,
+    "genres": "trap, lo-fi",
+    "playlistId": 2
+  },
+  {
+    "name": "The Clockwork Heart (98)",
+    "artist": "The Vinyl Vault",
+    "year": 2020,
+    "genres": "industrial, darkwave",
+    "playlistId": 5
+  },
+  {
+    "name": "Electric Bloom (156)",
+    "artist": "Lunar Dial",
+    "year": 2025,
+    "genres": "grunge revival, alt-rock",
+    "playlistId": 1
+  },
+  {
+    "name": "The Last Train (177)",
+    "artist": "Neon Ghost",
+    "year": 2024,
+    "genres": "folk-tronica, acoustic",
+    "playlistId": 2
+  }
+]
