@@ -15,34 +15,41 @@
 
 **Endpoints info:**
 1) POST /api/songs та PUT /api/songs/{id} приймають raw у такому форматі:
+```json
 {
-    "name": "Test song",
-    "artist": "Test",
-    "year": 2025,
-    "genres": [
-        "pop",
-        "rock"
-    ],
-    "playlistId": 1
+  "name": "Test song",
+  "artist": "Test",
+  "year": 2025,
+  "genres": [
+    "pop",
+    "rock"
+  ],
+  "playlistId": 1
 }
+```
 
 2) POST /api/songs/_list як параметри для фільтрації приймає playlistId, artist, year:
-POST /api/entity1/_list
+```json
 {
   "playlistId": 2,
   ...,
   "page": 1,
   "size": 20
 }
+```
 
-3) POST /api/songs/_report приймає лише параметри для фільтрації (playlistId, artist, year) та пропонує завантажити .xlsx файл:
+4) POST /api/songs/_report приймає лише параметри для фільтрації (playlistId, artist, year) та пропонує завантажити .xlsx файл:
+```json
 {
   "playlistId": 2,
   ...,
 }
+```
 
-4) POST /api/playlists та PUT /api/playlists/{id} приймають raw у такому форматі:
+6) POST /api/playlists та PUT /api/playlists/{id} приймають raw у такому форматі:
+```json
 {
     "name": "Testlist",
     "description": "Test desc"
 }
+```
