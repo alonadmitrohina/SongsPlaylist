@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/database
-    username: username
-    password: password
+    url: jdbc:postgresql://localhost:5432/songs_playlist
+    username: your_username
+    password: your_password
     driver-class-name: org.postgresql.Driver
 
   jpa:

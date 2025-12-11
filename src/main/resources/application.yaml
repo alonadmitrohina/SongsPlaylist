@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: mylocal
+    active: local
 
   liquibase:
     change-log: classpath:db/changelog/liquibase-changelog.xml
